@@ -1,0 +1,5 @@
+<% if @empData === "Employee"%>
+<%= react_component("EmployeeList", { employees: "get employees" }) %>
+<% else %>
+<%= react_component("HelloWorld", { greeting: "Hello from react-rails." }) %>
+<% end %>
